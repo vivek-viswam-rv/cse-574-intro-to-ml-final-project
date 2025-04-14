@@ -96,6 +96,8 @@ body {
 	padding-right: 10px;				/* so the text doesn't get so near the scroll bar */
 	pointer-events: auto;
 	white-space: pre-wrap;
+	max-height: 200px;
+	height: max-content;
 }
 
 #graph {
@@ -123,6 +125,88 @@ input[type=text]:focus {
 	font-size: 100%;
 	pointer-events: auto;
 	user-select: auto;
+	width: 39em;
+}
+
+.chat_wrapper {
+	margin: 0 0 0 1em;
+	pointer-events: auto;
+	font-family: monospace, monospace;
+	font-size: 100%;
+}
+
+#chat_title{
+	margin: 0 0 0.5em 0;
+}
+
+#chat_log {
+	overflow-y: scroll;
+	max-height: 250px;
+}
+
+#chat_container {
+	display: flex;
+}
+
+#chat_input {
+	grid-area: f;
+	height: 120px;
+	width: 85%;
+	margin: 1em 1em 1em 0;
+	background-color: #080808;
+	border-style: dashed;
+	caret-color: white;
+	color: #ffffff;
+	display: block;
+	font-family: monospace, monospace;
+	font-size: 100%;
+	user-select: auto;
+	resize: none;
+}
+
+#chat_input:focus {
+	outline: 2px dashed gray;
+	outline-offset: 4px;
+}
+
+#chat_send_btn {
+	appearance: button;
+	margin: 1em 0 1em 0;
+	background-color: #1652F0;
+	border: 1px solid #1652F0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	line-height: 1.15;
+	overflow: visible;
+	padding: 12px 16px;
+	position: relative;
+	text-align: center;
+	text-transform: none;
+	transition: all 80ms ease-in-out;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+}
+
+#chat_send_btn:disabled {
+	opacity: .5;
+}
+
+#chat_send_btn:focus {
+	outline: 0;
+}
+
+#chat_send_btn:hover {
+	background-color: #0A46E4;
+	border-color: #0A46E4;
+}
+
+#chat_send_btn:active {
+	background-color: #0039D7;
+	border-color: #0039D7;
 }
 
 #movelist {
