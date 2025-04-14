@@ -135,6 +135,16 @@ input[type=text]:focus {
 	font-size: 100%;
 }
 
+.user_message::before {
+	content: "You: ";
+	color: #6cccee;
+}
+
+.llama_response::before {
+	content: "Llama: ";
+	color: yellow;
+}
+
 #chat_title{
 	margin: 0 0 0.5em 0;
 }
