@@ -8,5 +8,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/rooklift/nibbler"
+	},
+	"dependencies": {
+		"electron": "^35.0.2"
 	}
 }
