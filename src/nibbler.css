@@ -129,7 +129,7 @@ input[type=text]:focus {
 }
 
 .chat_wrapper {
-	margin: 0 0 0 1em;
+	margin: 0 1em 0 1em;
 	pointer-events: auto;
 	font-family: monospace, monospace;
 	font-size: 100%;
