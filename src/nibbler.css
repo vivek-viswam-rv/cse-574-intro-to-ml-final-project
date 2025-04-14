@@ -220,6 +220,7 @@ input[type=text]:focus {
 	padding-right: 10px;				/* so the text doesn't get so near the scroll bar */
 	pointer-events: auto;
 	white-space: pre-wrap;
+	width: 39em;
 }
 
 #promotiontable {
